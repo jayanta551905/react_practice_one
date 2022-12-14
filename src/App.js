@@ -1,13 +1,34 @@
-import About from "./components/about/About";
-import Home from "./components/home/Home";
+import React, { Component } from 'react'
+import HomePage from './pages/HomePage';
 
-function App() {
-  return (
-    <div className="App">
-      <Home></Home>
-      <About></About>
-    </div>
-  );
+export default class App extends Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div>
+        <HomePage/>
+      </div>
+    )
+  }
 }
 
-export default App;
+
+
+
+
+
+
+// import HomePage from "./pages/HomePage";
+
+// function App() {
+//   return (
+//     <div>
+//       <HomePage />
+//     </div>
+//   );
+// }
+
+// export default App;
